@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Nellie Tobey">
+    <meta name="description" content="A django form to send an email to Nellie.">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <!-- JAVASCRIPT-->
+    <script type="text/javascript" src="{% static 'js/noodle_nav.js' %}"></script>
+
+    <!-- CSS Stylesheets-->
+    <link rel="stylesheet" href="{% static 'css/profile2.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/noodle_nav.css' %}"/>
+    <!-- Googel fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <!-- github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <title>Contact Nellie</title>
+    </head>
+<body>
+     <nav class='noodle_nav' id="my_nav">
+
+        <div class="nav_link_menu" id="nav_link_menu">
+           <a href="/">Portfolio</a>
+        </div>
+        <i class="fas fa-hamburger" id="hamburg" value="ON"></i>
+    </nav>
+<main>
+    <h1>Contact Me</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+</main>
+
+
+</body>
+</html>
