@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Special Elite', cursive;*/
+    font-family: 'Noto Sans JP', sans-serif;
+
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(251, 240, 248);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    margin-right: 10vw;
+}
+
+.color-link {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 5vh;
+}
+
+
+
+/*mobile flex-direction: column*/
+.display_cell {
+    display: flex;
+    flex-direction: column;
+    /*height: auto;*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, #f4f5f7bd, #d8d1d66b);
+}
+
+p {
+    word-wrap: break-word;
+    height: auto;
+    width: auto;
+    color: black;
+    background: #EFF6F7;
+    padding: 1ch;
+}
+
+.image_cell{
+    height: 30%;
+    width: 30%;
+}
+.single_image_cell {
+    height: 40%;
+    width: 40%;
+}
+
+.info {
+    width: 69%;
+    height: auto;
+    align-content: center;
+    text-align: justify;
+}
+.themes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+#bold_radio {
+    border: 2px solid white;
+    background-color: rgb(47, 24, 8);
+}
+#fall_radio {
+    background-color: lime;
+    border: 1px solid darkgreen;
+}
+
+.radio_button {
+    margin: 3px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.twitter_bird {
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+
+    padding: 0;
+    margin-bottom: 2vh;
+    text-align: center;
+    position: static;
+    width: auto;
+
+
+}
+.seperator {
+    width: 90%;
+    border: none;
+    background: radial-gradient(#9f9590, transparent);
+    height: 5px;
+}
+/*---   Items related to magnify.js / enlarge button functionality --*/
+
+.card {
+    position: relative;
+    /*Setting this diplay to block level, allows it to ignore flex box parent display*/
+    display: inline-block;
+    margin: auto;
+}
+
+image {
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background-color: #f1eff1;
+    /* text-shadow: -1px 1px black; */
+    color: #674a79;
+    border-radius: 10%;
+}
+
+/*------ Decorations --------*/
+
+.fancy {
+    color: rgba(0, 0, 0, 0.1);
+    background-image: url("https://res.cloudinary.com/dhsqdw1tp/image/upload/v1585237483/multicolored-illustration-3109830_uppcdi.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* this bit is where the magic happens */
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2em;
+    text-shadow: 2px 3px #eff6f780;
+}
+.pop_header {
+    text-shadow: -1px 1px 2px #a48a67, 1px -1px 3px #150708;
+    color: lavender;
+}
+
+
+
+.small {
+    max-height: 20vw;
+    max-width: 10vw;
+}
+.medium {
+    max-height: 30vw;
+    max-width: 25vw;
+}
+
+.sm_margin {
+    margin: 2px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+.border-style {
+    border: 3px solid silver;
+}
+
+.enlarge {
+    transition: all .3s ease-in-out;
+
+}
+
+    .enlarge:hover {
+        transform: scale(1.2);
+        text-shadow: 1px 1px purple, -1px -1px aqua;
+    }
+
+
+.enlarge-bg {
+    transition: all .6s ease-in-out;
+}
+
+    .enlarge-bg:hover {
+        transform: scale(1.6);
+
+    }
+
+/* --------  MOBILE -----------*/
+
+@media all and (max-width: 799px) and (min-width: 220px) {
+
+    .links{
+        flex-direction: column;
+        /*height: 70%;*/
+        width: auto;
+
+    }
+    a {
+        margin-right: 0;
+        /*
+        margin-bottom: 10vh;
+            */
+    }
+    .themes{
+        flex-direction: row;
+    }
+    label {
+        font-size: 0.7em;
+    }
+    .radio_button {
+
+    width: 20px;
+    height: 20px;
+
+}
+    .display_cell {
+        flex-direction: column;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .enlarge-bg:hover {
+        transform: scale(2);
+
+    }
+    .overlay {
+        padding: 5px;
+    }
+
+}
+

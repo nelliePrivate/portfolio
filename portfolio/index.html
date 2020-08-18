@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Nellie Tobey">
+    <meta name="description" content="A portfolio to display the works of Nellie Tobey, and have a little fun on the way.">
+    <!-- JAVASCRIPT-->
+    <script type="text/javascript" src="{% static 'js/color_react.js' %}"></script>
+    <!-- CSS Stylesheets-->
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}" />
+    <!-- Googel fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <title>N.Tobey Portfolio</title>
+</head>
+<body id="body">
+    <nav id="my_nav">
+        <div class="links">
+            <a class="color-link" href="https://github.com/nelliesnoodles" aria-label="Follow @nelliesnoodles on GitHub"><image src="{% static 'images/GitHub-Mark-32px.png' %}"> </image>@nelliesnoodles</a>
+            <a class="color-link" href="https://twitter.com/NelliesNoodles"> <image src="{% static 'images/twitter_bird.png' %}" class="twitter_bird"></image>@NelliesNoodles</a>
+
+
+        </div>
+       <div class="themes">
+        <input type="button" id="bold_radio" class="radio_button" title="change color scheme of page to : bold." />
+        <label for="bold_radio">bold</label>
+
+        <input type="button" id="original_radio" title="change colors back to the default setting" class="radio_button"/>
+        <label for="original_radio">original</label>
+
+        <input type="button" id="fall_radio" class="radio_button" title="change theme to a theme of colors like Michigan in Autumn" />
+           <label for="fall_radio">Autumn</label>
+           </div>
+
+
+        </nav>
+
+    <main>
+        <h1 class="pop_header">Nellie Tobey</h1>
+        <section class="display_cell" id="about">
+            <image class="image_cell small" src="{% static 'images/meANDgeorge_sm2.jpg' %}" alt="A picture I took with my dog George, but it was way to large, so you just got my face, my appologies."></image>
+            <p>
+                My name is Nellie Tobey, and I want to make stuff you want me to make.<br />I am a self driven learner, tackling everything that allows me to explore and create.
+                <br />Wether it's oil paint, crayons, or Python; I aim to learn and add to my skill stack every chance I get.
+            </p>
+        </section>
+
+        <!--    CHINGU   -->
+
+        <h1 class="fancy">Chingu Voyages</h1>
+        <section class="display_cell" id="chingu">
+            <div class="flex-row">
+                <image class="image_cell medium enlarge-bg" src="{% static 'images/match_game.JPG' %}" alt="screen shot of my memory match game, level 1."></image>
+                <image class="image_cell medium enlarge-bg" src="{% static 'images/V10quiz.JPG' %}" alt="three spliced screen shot of the different quizzes on Code Quiz"></image>
+                <image class="image_cell medium enlarge-bg" src="{% static 'images/V15solo.JPG' %}" alt="screenshot of my solo project, google fonts clone.  Dark mode active."></image>
+                <image class="image_cell medium enlarge-bg" src="{% static 'images/V15team.JPG' %}" alt="screenshot of the team project in mobile view, Code Track"></image>
+
+
+            </div>
+            <p>Each of these projects have a link in the Nellie's Noodles Homepage.  My very first team project and voyage with Chingu was a Code Quiz. <br />
+            Before entering the voyage, prospective Chingu's must produce a solo project they have created on their own.  For voyage 10, I created the javascript Match game.<br />
+            For voyage 15 I made a Google Fonts Clone, and our team created a full stack app named Code Track.  I developed the backend with Django, and the amazing front end made it all beautiful.<br />
+            A user can create an account, and make use of the 'to-do' list, the 'bookmarks' to store their favorite links, and the 'goals' where they can set goals for themselves whenever they want.</p>
+            <div class="links">
+
+                    <a class="enlarge color-link" href="https://nelliesnoodles.github.io/" target="_blank"> Voyage 10 Match Game</a>
+                    <a class="enlarge color-link" href="https://chingu-voyages.github.io/v10-geckos-team-01/index.html" target="_blank"> Voyage 10 project Code Quiz</a>
+                    <a class="enlarge color-link" href="https://nelliesnoodles.github.io/Favorite_Fonts_Chingu_V15_prework/" target="_blank">Voyage 15 Google Fonts</a>
+                    <a class="enlarge color-link" href="https://thecodetrack.pythonanywhere.com/" target="_blank">Chingu Voyage 15 Code Track</a>
+                </div>
+</div>
+
+        </section>
+        <hr class="seperator" />
+        <section class="display_cell" id="chingu_facilitator">
+            <h2> A Chingu Facilitator since January 2020 </h2>
+            <image class="image_cell" src="{% static 'images/CSS_v1.GIF' %}" alt="Based on the series Doctor Who, the player is a tardis, an old time public police call box from the 50s, and the enemys are red black and gold Daleks, the most hateful and deadly of Doctor Who villians."></image>
+            <p class="info">
+                As a facilitator and voyager, I am a proud supporter of the Chingu experience.  Being on a team, and building projects really helped me to explore and develop my coding abilities beyond what I would have been able to on my own.
+                <br />
+                In the facilitator role I get the chance to evaluate sumbissions for voyage entry, and recently was on a team to build a game demo and guidelines to add to the many amazing projects Chingu offers new entrants to build.
+                <br />
+                I built a small collision demo in Vanilla JavaScript while creating our game examples, the link will be below.  A gif of one of the examples I built is above.
+            </p>
+            <a class="enlarge color-link"href="https://github.com/nelliesnoodles/collision" target="_blank">Github Repo for Collision</a>
+
+
+        </section>
+
+
+        <!--  PYTHON   -->
+
+
+        <h1 class="fancy">Python</h1>
+        <section class="display_cell" id="python_Wiwa">
+            <a class="enlarge sm_margin color-link" href="https://nelliesnoodles.pythonanywhere.com/WIWA" target="_blank"><h1> Wiwa </h1></a>
+
+            <image class="image_cell enlarge-bg" src="{% static 'images/wiwa.JPG' %}" alt="a screenshot of a silly conversation with my chatbot, Wiwa."></image>
+
+
+            <p class="info">
+                Whispering Wall, or Wiwa for short, is a chatbot built with python.  <br />The NLTK library is utilized to parse user entered text, and separate identified parts of speech into lists.<br />
+                Once all the cleaning and parsing is done, One of the parsed parts of speech is selected at random. <br />
+                A script that has sentences set up to fit that part of speech is also selected randomly to return to the user.<br />
+                If the code can't detect an English word, a script of silly phrases (Most from Monty Python) is used, and a random selection comes from there.<br />
+                She also can respond to her own name, greetings, my name, questions, simple answers, and I have recently added a list of words she will not tolerate being used in the chatbox.
+                Go have a chat! It's just sillyness, I promise.
+            </p>
+        </section>
+
+        <hr class="seperator" />
+
+        <section class="display_cell" id="python_django1">
+            <a class="enlarge sm_margin color-link" href="https://nelliesnoodles.pythonanywhere.com/" target="_blank"><h1> Nellie's Noodles </h1></a>
+            <image class="image_cell enlarge-bg" src="{% static 'images/homepage.JPG' %}" alt="A screenshot of my personal website, built with Django, python, javascript, html and css."></image>
+            <p class="info">
+                This is my first and personal web page, Nellie's Noodles. <br /> It is run on a pythonanywhere server using Django, Python, JavaScript, HTML, and CSS.<br />
+                There's a chatbot, a silly javascript example of a tardis in ASCII, a tiny game meant for two players called NIM, my small blog about the site, A wordfinder that can spellcheck and retrieve definitions.
+                I've used this site to experiment with a slackbot, a math site, a trading site, and a few other projects that got lost along the way.
+            </p>
+        </section>
+        <hr class="seperator" />
+
+        <!--   CERTIFICATES  -->
+        <h1 class="fancy">Certificates</h1>
+
+
+        <section class="display_cell" id="FCC_certificates">
+
+
+            <div class="flex-row">
+            <image class="image_cell enlarge-bg" src="{% static 'images/Freecodecamp_WebDesign.JPG' %}" alt="The Free Code Camp  Web Design certificate I earned by completing all the course work offered. "></image>
+            <image class="image_cell enlarge-bg" src="{% static 'images/javascript_freecodecamp.JPG' %}" alt="The Free Code Camp JavaScript (Data Structures and Algorithms) certificate I earned by completing all the course work offered."></image>
+            </div>
+
+            <p class="info">
+                <a class="enlarge" href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a> <br /> FCC is an online training tool that helps learning many information technology subjects.
+            </p>
+        </section>
+        <hr class="seperator" />
+
+    </main>
+
+</body>
+</html>
